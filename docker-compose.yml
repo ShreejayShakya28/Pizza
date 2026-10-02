@@ -1,0 +1,23 @@
+# Docker is used ONLY for Postgres. Backend and frontend run locally via npm.
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: pizza_postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: pizza
+      POSTGRES_PASSWORD: pizza_pass
+      POSTGRES_DB: pizza_db
+    ports:
+      - "5439:5432"
+    volumes:
+      - pizza_pgdata:/var/lib/postgresql/data
+      - ./db/init.sql:/docker-entrypoint-initdb.d/init.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U pizza -d pizza_db"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+volumes:
+  pizza_pgdata:
