@@ -42,4 +42,3 @@ Open http://localhost:5173 and sign in with the demo account
 ```bash
 docker compose down -v && docker compose up -d
 ```
-say this the fix
