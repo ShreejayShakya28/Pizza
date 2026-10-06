@@ -33,7 +33,7 @@ CREATE INDEX IF NOT EXISTS idx_orders_user_created ON orders (user_id, created_a
 
 INSERT INTO menu_items (name, description, price_cents) VALUES
   ('Margherita',   'San Marzano tomato, fresh mozzarella, basil',            1100),
-  ('Pepperoni',    'Tomato, mozzarella, crisp-edged pepperoni',              1300),
+  ('Pepperoni',    'Tomato, mozzarella, crisp-edged pepperoni',              1400),
   ('Four Cheese',  'Mozzarella, gorgonzola, fontina and parmesan',           1400),
   ('Veggie Garden','Roasted peppers, mushrooms, olives, red onion',          1250),
   ('BBQ Chicken',  'Smoky BBQ sauce, grilled chicken, red onion, cilantro',  1450),
