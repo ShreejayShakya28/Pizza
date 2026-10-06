@@ -32,7 +32,7 @@ CREATE TABLE IF NOT EXISTS orders (
 CREATE INDEX IF NOT EXISTS idx_orders_user_created ON orders (user_id, created_at DESC);
 
 INSERT INTO menu_items (name, description, price_cents) VALUES
-  ('Margherita',   'San Marzano tomato, fresh mozzarella, basil',            1100),
+  ('Margherita',   'San Marzano tomato, fresh mozzarella, basil',            1500),
   ('Pepperoni',    'Tomato, mozzarella, crisp-edged pepperoni',              1300),
   ('Four Cheese',  'Mozzarella, gorgonzola, fontina and parmesan',           1400),
   ('Veggie Garden','Roasted peppers, mushrooms, olives, red onion',          1250),
