@@ -43,3 +43,4 @@ Open http://localhost:5173 and sign in with the demo account
 docker compose down -v && docker compose up -d
 ```
 please be done
+update
