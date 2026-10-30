@@ -44,3 +44,4 @@ docker compose down -v && docker compose up -d
 ```
 something 
 fixeed
+env stuff with ports not good
